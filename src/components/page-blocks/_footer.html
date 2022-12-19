@@ -1,0 +1,50 @@
+<section class="popup js-active popap-creat-shop">
+  <div class="popup__inner">
+    <button class="popup__burger burger burger--close burger--grey" type="button">
+      <span class="hide">закрыть</span>
+    </button>
+
+    <h2 class="popup__title title"></h2>
+    <form class="popup__form">
+      <label class="popup__select-label select-label">
+        <span class="select-label__text">Шаблон</span>
+        <select class="form-select" aria-label="Пример выбора по умолчанию">
+          <option selected>Стандартный</option>
+          <option value="1">Один</option>
+          <option value="2">Два</option>
+          <option value="3">Три</option>
+        </select>
+      </label>
+
+      <label class="popup__select-label select-label">
+        <span class="select-label__text">Цветовая схема</span>
+        <select class="form-select" aria-label="Пример выбора по умолчанию">
+          <option selected>Классическая</option>
+          <option value="1">Один</option>
+          <option value="2">Два</option>
+          <option value="3">Три</option>
+        </select>
+      </label>
+
+      <label class="popup__input-label">
+        <span class="select-label__text">Домен</span>
+        <input class="input" type="text" placeholder="Например: ivangrozniy" required>
+        <span class="popup__domain-text">.work5.ru</span>
+      </label>
+
+      <div class="popup__text">
+        <p>
+          В названии домена разрешены латиница и “-”, запрещается использовать словосочетание Work 5. После создания
+          магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по <a href="">ссылке</a> 
+        </p>
+      </div>
+
+      <button class="popup__btn btn btn-secondary" type="submit">Отмена</button>
+      <button class="popup__btn btn btn-success" type="button">Создать</button>
+
+    </form>
+
+  </div>
+</section>
+
+<div class="overlay"></div>

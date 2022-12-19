@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href=".svg" type="image/svg+xml">
+  <link rel="shortcut icon" href=".webp" type="image/webp">
+  <link rel="shortcut icon" href=".png" type="image/x-icon">
+  <title>Work управление магазинами</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <nav class="nav-bar js-active">
+  <a class="logo" href="">
+    <img class="logo__img" height="51" width="106" src="img/logo.webp" alt="Логотип сайта">
+  </a>
+
+  <!-- ниже должны были быть свг, но у меня фотошоп старый давно его не использовал, а со старого не вырезаются свг, время терять на это не стал, с мыслью "может перед сдачей найду как вырезать svg, а пока сверстаю так" -->
+
+  <ul class="nav-bar__list">
+    <li class="nav-bar__item">
+      <a class="nav-bar__link icon-link" href="">
+        <span class="icon-link__ico" style="background-image: url(img/home.webp);"></span>
+        Главная
+      </a>
+    </li>
+    <li class="nav-bar__item">
+      <a class="nav-bar__link icon-link" href="">
+        <span class="icon-link__ico" style="background-image: url(img/cart.webp);"></span>
+        Мои магазины
+      </a>
+    </li>
+    <li class="nav-bar__item">
+      <a class="nav-bar__link icon-link" href="">
+        <span class="icon-link__ico" style="background-image: url(img/megaphone.webp);"></span>
+        Промоматериалы
+      </a>
+    </li>
+    <li class="nav-bar__item">
+      <a class="nav-bar__link icon-link" href="">
+        <span class="icon-link__ico" style="background-image: url(img/pie-chart.webp);"></span>
+        Статистика
+      </a>
+    </li>
+    <li class="nav-bar__item">
+      <a class="nav-bar__link icon-link" href="">
+        <span class="icon-link__ico" style="background-image: url(img/wallet.webp);"></span>
+        Баланс
+      </a>
+    </li>
+    <li class="nav-bar__item">
+      <a class="nav-bar__link icon-link" href="">
+        <span class="icon-link__ico" style="background-image: url(img/profile.webp);"></span>
+        Персональные данные
+      </a>
+    </li>
+    <li class="nav-bar__item">
+      <a class="nav-bar__link icon-link" href="">
+        <span class="icon-link__ico" style="background-image: url(img/information.webp);"></span>
+        FAQ
+      </a>
+    </li>
+    <li class="nav-bar__item">
+      <a class="nav-bar__link icon-link" href="">
+        <span class="icon-link__ico" style="background-image: url(img/music.webp);"></span>
+        Техподдержка
+      </a>
+    </li>
+    <li class="nav-bar__item">
+      <a class="nav-bar__link icon-link" href="">
+        <span class="icon-link__ico" style="background-image: url(img/logout.webp);"></span>
+        Выход
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<div class="nav-bar-fixed js-active">
+  <button class="nav-bar-burger burger" type="button">
+    <span class="burger__line"></span>
+    <span class="hide"> открыть/закрыть меню</span>
+  </button>
+</div>
+      <main class="main">
+
+        <div class="top-bar">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__link">Мои магазины</span>
+            </li>
+          </ul>
+
+          <div class="top-bar__btns">
+            <button class="top-bar__message message" type="button">
+              <span class="message__in"></span>
+              <span class="hide">открыть входящие сообщения</span>
+            </button>
+            <button class="user-menu" type="button">
+              <img class="user-menu__avatar" src="img/avatar.webp" alt="аватарка">
+              Максим Добжанский
+            </button>
+          </div>
+        </div>
+
+        <section class="management">
+          <button class="management__btn btn btn-success btn-icon btn-icon--plus" type="button">
+            Создать свой магазин
+          </button>
+          <h1 class="management__title title">Управление магазинами</h1>
+
+          <div class="management__table-my table-my">
+            <div class="table-my__row">
+              <span class="table-my__col table-my__col--1">№</span>
+              <span class="table-my__col table-my__col--2">Название</span>
+              <span class="table-my__col table-my__col--3">Адрес</span>
+              <span class="table-my__col table-my__col--4">Действие</span>
+            </div>
+
+            <div class="table-my__row">
+              <span class="table-my__col table-my__col--1">12345</span>
+              <span class="table-my__col table-my__col--2">Дипломная работа</span>
+              <span class="table-my__col table-my__col--3 "><a href="">http://www.work5.ru/services</a>
+              </span>
+
+              <span class="table-my__col table-my__col--4">
+                <button class="table-my__btn btn btn-success btn-icon btn-icon--pencil"
+                  type="button">Редактировать</button>
+                <button class="table-my__btn btn btn-secondary btn-icon btn-icon--cancel"
+                  type="button">Редактировать</button>
+              </span>
+            </div>
+
+            <div class="table-my__row">
+              <span class="table-my__col table-my__col--1">12345</span>
+              <span class="table-my__col table-my__col--2">Дипломная работа</span>
+              <span class="table-my__col table-my__col--3">http://www.work5.ru/services</span>
+              <span class="table-my__col table-my__col--4">
+                <button class="table-my__btn btn btn-success btn-icon btn-icon--pencil"
+                  type="button">Редактировать</button>
+                <button class="table-my__btn btn btn-secondary btn-icon btn-icon--cancel"
+                  type="button">Редактировать</button>
+              </span>
+            </div>
+          </div>
+
+          <div class="table-my-mobile">
+            <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="management__table-my table-my table-my--mobile">
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">№</span>
+                      <span class="table-my__col ">12345</span>
+                    </div>
+
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">Название</span>
+                      <span class="table-my__col "><span class="table-my__col ">Дипломная работа Дипломная
+                          работаДипломная
+                          работа Дипломная работа Дипломная работа Дипломная работаДипломная работа</span></span>
+                    </div>
+
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">Адрес</span>
+                      <span class="table-my__col table-my__col--address">
+                        <a href="">http://www.work5.ru/services</a>
+                      </span>
+                    </div>
+
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">Действие</span>
+                      <div>
+                        <button class="table-my__btn btn btn-success btn-icon btn-icon--pencil"
+                          type="button">Редактировать</button>
+                        <button class="table-my__btn btn btn-secondary btn-icon btn-icon--cancel"
+                          type="button">Редактировать</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="management__table-my table-my ">
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">№</span>
+                      <span class="table-my__col ">12345</span>
+                    </div>
+
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">Название</span>
+                      <span class="table-my__col "><span class="table-my__col ">Дипломная работа Дипломная
+                          работаДипломная
+                          работа Дипломная работа Дипломная работа Дипломная работаДипломная работа</span></span>
+                    </div>
+
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">Адрес</span>
+                      <span class="table-my__col table-my__col--address">
+                        <a href="">http://www.work5.ru/services</a>
+                      </span>
+                    </div>
+
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">Действие</span>
+                      <div>
+                        <button class="table-my__btn btn btn-success btn-icon btn-icon--pencil"
+                          type="button">Редактировать</button>
+                        <button class="table-my__btn btn btn-secondary btn-icon btn-icon--cancel"
+                          type="button">Редактировать</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="management__table-my table-my table-my--mobile">
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">№</span>
+                      <span class="table-my__col ">12345</span>
+                    </div>
+
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">Название</span>
+                      <span class="table-my__col "><span class="table-my__col ">Дипломная работа Дипломная
+                          работаДипломная
+                          работа Дипломная работа Дипломная работа Дипломная работаДипломная работа</span></span>
+                    </div>
+
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">Адрес</span>
+                      <span class="table-my__col table-my__col--address">
+                        <a href="">http://www.work5.ru/services</a>
+                      </span>
+                    </div>
+
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">Действие</span>
+                      <div>
+                        <button class="table-my__btn btn btn-success btn-icon btn-icon--pencil"
+                          type="button">Редактировать</button>
+                        <button class="table-my__btn btn btn-secondary btn-icon btn-icon--cancel"
+                          type="button">Редактировать</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+          </div>
+
+
+        </section>
+
+
+      </main>
+    </div>
+  </div>
+  <section class="popup js-active popap-creat-shop">
+  <div class="popup__inner">
+    <button class="popup__burger burger burger--close burger--grey" type="button">
+      <span class="hide">закрыть</span>
+    </button>
+
+    <h2 class="popup__title title"></h2>
+    <form class="popup__form">
+      <label class="popup__select-label select-label">
+        <span class="select-label__text">Шаблон</span>
+        <select class="form-select" aria-label="Пример выбора по умолчанию">
+          <option selected>Стандартный</option>
+          <option value="1">Один</option>
+          <option value="2">Два</option>
+          <option value="3">Три</option>
+        </select>
+      </label>
+
+      <label class="popup__select-label select-label">
+        <span class="select-label__text">Цветовая схема</span>
+        <select class="form-select" aria-label="Пример выбора по умолчанию">
+          <option selected>Классическая</option>
+          <option value="1">Один</option>
+          <option value="2">Два</option>
+          <option value="3">Три</option>
+        </select>
+      </label>
+
+      <label class="popup__input-label">
+        <span class="select-label__text">Домен</span>
+        <input class="input" type="text" placeholder="Например: ivangrozniy" required>
+        <span class="popup__domain-text">.work5.ru</span>
+      </label>
+
+      <div class="popup__text">
+        <p>
+          В названии домена разрешены латиница и “-”, запрещается использовать словосочетание Work 5. После создания
+          магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по <a href="">ссылке</a> 
+        </p>
+      </div>
+
+      <button class="popup__btn btn btn-secondary" type="submit">Отмена</button>
+      <button class="popup__btn btn btn-success" type="button">Создать</button>
+
+    </form>
+
+  </div>
+</section>
+
+<div class="overlay"></div>
+  <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"Work управление магазинами",
+"description":"",
+"keywords":"",
+"favicon":"",
+})
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      @@include('components/page-blocks/_header.html')
+      <main class="main">
+
+        <div class="top-bar">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__link">Мои магазины</span>
+            </li>
+          </ul>
+
+          <div class="top-bar__btns">
+            <button class="top-bar__message message" type="button">
+              <span class="message__in"></span>
+              <span class="hide">открыть входящие сообщения</span>
+            </button>
+            <button class="user-menu" type="button">
+              <img class="user-menu__avatar" src="img/avatar.webp" alt="аватарка">
+              Максим Добжанский
+            </button>
+          </div>
+        </div>
+
+        <section class="management">
+          <button class="management__btn btn btn-success btn-icon btn-icon--plus" type="button">
+            Создать свой магазин
+          </button>
+          <h1 class="management__title title">Управление магазинами</h1>
+
+          <div class="management__table-my table-my">
+            <div class="table-my__row">
+              <span class="table-my__col table-my__col--1">№</span>
+              <span class="table-my__col table-my__col--2">Название</span>
+              <span class="table-my__col table-my__col--3">Адрес</span>
+              <span class="table-my__col table-my__col--4">Действие</span>
+            </div>
+
+            <div class="table-my__row">
+              <span class="table-my__col table-my__col--1">12345</span>
+              <span class="table-my__col table-my__col--2">Дипломная работа</span>
+              <span class="table-my__col table-my__col--3 "><a href="">http://www.work5.ru/services</a>
+              </span>
+
+              <span class="table-my__col table-my__col--4">
+                <button class="table-my__btn btn btn-success btn-icon btn-icon--pencil"
+                  type="button">Редактировать</button>
+                <button class="table-my__btn btn btn-secondary btn-icon btn-icon--cancel"
+                  type="button">Редактировать</button>
+              </span>
+            </div>
+
+            <div class="table-my__row">
+              <span class="table-my__col table-my__col--1">12345</span>
+              <span class="table-my__col table-my__col--2">Дипломная работа</span>
+              <span class="table-my__col table-my__col--3">http://www.work5.ru/services</span>
+              <span class="table-my__col table-my__col--4">
+                <button class="table-my__btn btn btn-success btn-icon btn-icon--pencil"
+                  type="button">Редактировать</button>
+                <button class="table-my__btn btn btn-secondary btn-icon btn-icon--cancel"
+                  type="button">Редактировать</button>
+              </span>
+            </div>
+          </div>
+
+          <div class="table-my-mobile">
+            <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="management__table-my table-my table-my--mobile">
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">№</span>
+                      <span class="table-my__col ">12345</span>
+                    </div>
+
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">Название</span>
+                      <span class="table-my__col "><span class="table-my__col ">Дипломная работа Дипломная
+                          работаДипломная
+                          работа Дипломная работа Дипломная работа Дипломная работаДипломная работа</span></span>
+                    </div>
+
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">Адрес</span>
+                      <span class="table-my__col table-my__col--address">
+                        <a href="">http://www.work5.ru/services</a>
+                      </span>
+                    </div>
+
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">Действие</span>
+                      <div>
+                        <button class="table-my__btn btn btn-success btn-icon btn-icon--pencil"
+                          type="button">Редактировать</button>
+                        <button class="table-my__btn btn btn-secondary btn-icon btn-icon--cancel"
+                          type="button">Редактировать</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="management__table-my table-my ">
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">№</span>
+                      <span class="table-my__col ">12345</span>
+                    </div>
+
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">Название</span>
+                      <span class="table-my__col "><span class="table-my__col ">Дипломная работа Дипломная
+                          работаДипломная
+                          работа Дипломная работа Дипломная работа Дипломная работаДипломная работа</span></span>
+                    </div>
+
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">Адрес</span>
+                      <span class="table-my__col table-my__col--address">
+                        <a href="">http://www.work5.ru/services</a>
+                      </span>
+                    </div>
+
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">Действие</span>
+                      <div>
+                        <button class="table-my__btn btn btn-success btn-icon btn-icon--pencil"
+                          type="button">Редактировать</button>
+                        <button class="table-my__btn btn btn-secondary btn-icon btn-icon--cancel"
+                          type="button">Редактировать</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="management__table-my table-my table-my--mobile">
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">№</span>
+                      <span class="table-my__col ">12345</span>
+                    </div>
+
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">Название</span>
+                      <span class="table-my__col "><span class="table-my__col ">Дипломная работа Дипломная
+                          работаДипломная
+                          работа Дипломная работа Дипломная работа Дипломная работаДипломная работа</span></span>
+                    </div>
+
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">Адрес</span>
+                      <span class="table-my__col table-my__col--address">
+                        <a href="">http://www.work5.ru/services</a>
+                      </span>
+                    </div>
+
+                    <div class="table-my__row">
+                      <span class="table-my__col table-my__col--left">Действие</span>
+                      <div>
+                        <button class="table-my__btn btn btn-success btn-icon btn-icon--pencil"
+                          type="button">Редактировать</button>
+                        <button class="table-my__btn btn btn-secondary btn-icon btn-icon--cancel"
+                          type="button">Редактировать</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+          </div>
+
+
+        </section>
+
+
+      </main>
+    </div>
+  </div>
+  @@include('components/page-blocks/_footer.html')
+  @@include('components/page-blocks/_scripts.html')
+
+</body>
+
+</html>
