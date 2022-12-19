@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function showOverlay() {
     overlay.classList.add('active');
-    
   }
 
   function closeOverlay() {
@@ -34,19 +33,18 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   burger.addEventListener('click', function () {
-    closeOverlay();
     this.classList.toggle('burger--close');
     burgerFixed.classList.toggle('active');
     menu.classList.toggle('active');
     overlay.classList.toggle('active');
   });
 
-  menu.addEventListener('click', function () {
-    this.classList.remove('burger--close');
-    burgerFixed.classList.remove('active');
-    menu.classList.remove('active');
-    closeOverlay();
-  });
+  // menu.addEventListener('click', function () {
+  //   this.classList.remove('burger--close');
+  //   burgerFixed.classList.remove('active');
+  //   menu.classList.remove('active');
+  //   closeOverlay();
+  // });
 
   managementBtn.addEventListener('click',()=> {
     popapCreatShop.classList.add('active');
